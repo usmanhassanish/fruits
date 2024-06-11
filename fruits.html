@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: 'Brush Script MT', cursive;
+		}
+		.top
+		{
+			width: 100%;
+			height: 40px;
+			background-color: #20948B;
+			color: white;
+			text-align: center;
+		}
+		.top2
+		{
+			width: 100%;
+			height: 35px;
+			background-color: #6AB187;
+			color: white;
+			text-align: center;
+		}
+		.fruits
+		{
+			margin-top: 10px;
+			width: 100%;
+			text-align: center;
+		}
+		#fruit-type
+		{
+			display: inline-block;
+			background-color: #20948B;
+			border-radius: 5px;
+			padding: 5px;
+   
+		}
+		#display
+		{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5px;
+			border: 2px solid #20948B;
+			border-style: dashed;
+			text-align: center;
+		}
+		.inner-text
+		{
+			width: 100%;
+			word-wrap: break-word;
+		}
+		button
+		{
+			background-color: #20948B;
+			border: solid dodgerblue;
+			border-radius: 5px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="top">
+		<h1>FRUITS</h1>
+	</div>
+	<div class="top2">
+		<h2>Nature's juicy gems</h2>
+	</div>
+ <div class="fruits">
+        <span class="fruit-type"><button onclick="orangeFunc()"><h3>ORANGE</h3></button></span>
+        <span class="fruit-type"><button onclick="melonFunc()"><h3>WATER-MELON</h3></button></span>
+        <span class="fruit-type"><button onclick="bananaFunc()"><h3>BANANA</h3></button></span>
+        <span class="fruit-type"><button onclick="appleFunc()"><h3>APPLE</h3></button></span>
+
+    </div>
+    <script>
+        function orangeFunc() {
+          document.getElementById("head").innerHTML = "ORANGE";
+          document.getElementById("one").innerHTML = "Lowers high blood pressure";
+           document.getElementById("two").innerHTML = "Prevents constipation";
+            document.getElementById("three").innerHTML = "Promotes proper digestion";
+        }
+        function bananaFunc() {
+          document.getElementById("head").innerHTML = "BANANA";
+          document.getElementById("one").innerHTML = "Fights Acne";
+           document.getElementById("two").innerHTML = "Heals Wounds";
+            document.getElementById("three").innerHTML = "Increases Energy";
+        }
+        function melonFunc() {
+        document.getElementById("head").innerHTML = "WATER-MELON";
+          document.getElementById("one").innerHTML = "Reduces high blood pressure";
+           document.getElementById("two").innerHTML = "Healthy Digestion";
+            document.getElementById("three").innerHTML = "Boost Immune System";
+        }
+        function appleFunc() {
+          document.getElementById("head").innerHTML = "APPLE";
+          document.getElementById("one").innerHTML = "Boost Immune System";
+           document.getElementById("two").innerHTML = "Decrease risk of diabetes";
+            document.getElementById("three").innerHTML = "Lower bad cholestrol";
+        }
+    </script>
+
+    <div id="display">
+        <h2 id="head"></h2>
+        <h1 style="background-color: #6AB187;color: white;">BENEFITS</h1>
+        <div class="inner-text" style="background-color: #20948B;color: white;">
+        <h2 id="one">Fruits are nature's delightful treasures, packed with an array of essential nutrients, flavors, and vibrant colors. They play a vital role in maintaining good health and well-being for individuals of all ages. Each type of fruit offers a unique blend of nutrients beneficial for various bodily functions. For instance, citrus fruits like oranges and lemons are high in vitamin C, which boosts the immune system and promotes healthy skin. Bananas are loaded with potassium, essential for maintaining proper heart function and muscle health.</h2>
+        <h2 id="two">Regular consumption of fruits is associated with a reduced risk of chronic diseases such as heart disease, stroke, diabetes, and certain cancers. The antioxidants found in fruits help neutralize harmful free radicals in the body, protecting cells from damage and lowering the risk of developing these conditions. Moreover, fruits are low in calories and high in fiber, making them an excellent choice for those looking to manage their weight. The fiber content in fruits promotes feelings of fullness and satiety, reducing the likelihood of overeating and aiding in weight loss or weight maintenance efforts.</h2>
+        <h2 id="three">In conclusion, fruits are not only delicious but also essential for maintaining optimal health and well-being. Incorporating a variety of fruits into your daily diet can provide a wide range of nutrients, promote disease prevention, support digestive health, and contribute to overall vitality and longevity. So, next time you reach for a snack, consider grabbing a piece of nature's goodness—a juicy, nutritious fruit!</h2>
+        </div>
+    </div>
+</body>
+</html>
